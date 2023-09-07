@@ -31,7 +31,7 @@ workers of these occupations have similar abilities, education, and experience.
 
 This project uses data from the following two sources:
 
-1. O*NET database (https://www.onetcenter.org/database.html) – The O*NET database
+1. O\*NET database (https://www.onetcenter.org/database.html) – The O\*NET database
 contains rich information on over 900 occupations. It includes information on the skills,
 abilities, and knowledge associated with each occupation, as well as each occupation’s
 typical activities and tasks. It also includes information on the day-to-day aspects of many
@@ -59,7 +59,7 @@ The above sources produced 1,324 unique stop words.
 
 ## Methodology
 
-I followed Kogan et al. (2020) to calculate the similarity of occupations by measuring the similarity
+I follow Kogan et al. (2020) to calculate the similarity of occupations by measuring the similarity
 of their task descriptions. The O*NET database contains descriptions of the typical tasks of over
 900 occupations. These descriptions are written in full English sentences. For example, there are
 28 task descriptions for “Registered Nurse”, such as “record patients' medical information and
@@ -71,4 +71,19 @@ in the GloVe database using the procedure below.
 Denote by $A_i$ the set of ``word vectors” in the task description of occupation 𝑖, and denote by $X_i$ the
 weighted average of these:
 
-$ X_i = \sum_{x_k \in A_i} $
+$ X_i = \sum_{x_k \in A_i} w_{ik} x_k, $
+
+where $x_k$ is a 300-by-1 dimensional vector representation of a word in the task description for
+occupation 𝑖 (the task descriptions are from O\*NET and the vector representations of words are obtained from the GloVe database), and $w_{ik}$ is a scalar. Here, $w_{ik}$ is the term-frequency-inversedocument-
+frequency (TFIDF) weight defined as
+
+$ w_{ik} = TF_{ik} \times IDF_k, $
+
+where $TF_{ik} = \frac{c_{ik}}{\sum_j c_{ij}},$ with $c_{ij}$ denotes the count of the $j$th word in the task description of $i$, and $IDF_k$ is the natural log of the ratio of the number of occupations in the sample to the number of occupations in the sample with a task description that includes term $k$.
+
+The above method produces a 300-dimensional real-valued vector for each occupation i in the O\*NET database.
+
+After applying the above procedure, I obtained a 300-dimensional vector representation for each
+occupation in my data. I then used AgglomerativeClustering from sklearn.cluster to cluster the
+occupations into 50 clusters. The number 50 is arbitrary here, but it seems to work well. I used
+cosine similarity2 as the affinity in AgglomerativeClustering.
