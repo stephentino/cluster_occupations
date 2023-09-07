@@ -58,3 +58,17 @@ I also used stop words from the following sources (following Kogan et al. 2020):
 The above sources produced 1,324 unique stop words.
 
 ## Methodology
+
+I followed Kogan et al. (2020) to calculate the similarity of occupations by measuring the similarity
+of their task descriptions. The O*NET database contains descriptions of the typical tasks of over
+900 occupations. These descriptions are written in full English sentences. For example, there are
+28 task descriptions for “Registered Nurse”, such as “record patients' medical information and
+vital signs” and “monitor, record, and report symptoms or changes in patients' conditions”.
+The first thing I did was lemmatize and tokenize each occupation’s task description using the
+NLTK package in python. Then, I removed all stop words, where the list of stop words came from
+several sources (see section IV). Next, I mapped the task descriptions to 300 dimensional vectors
+in the GloVe database using the procedure below.
+Denote by $A_i$ the set of ``word vectors” in the task description of occupation 𝑖, and denote by $X_i$ the
+weighted average of these:
+
+$ X_i = \sum_{x_k \in A_i} $
