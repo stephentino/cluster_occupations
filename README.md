@@ -28,9 +28,9 @@ workers of these occupations have similar abilities, education, and experience.
 
 ## Data
 
-This project uses data from the following sources:
+This project uses data from the following two sources:
 
-O*NET database (https://www.onetcenter.org/database.html) – The O*NET database
+1. O*NET database (https://www.onetcenter.org/database.html) – The O*NET database
 contains rich information on over 900 occupations. It includes information on the skills,
 abilities, and knowledge associated with each occupation, as well as each occupation’s
 typical activities and tasks. It also includes information on the day-to-day aspects of many
