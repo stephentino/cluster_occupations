@@ -5,8 +5,6 @@
 
 The purpose of this project is to improve upon existing definitions of labor markets by using methods from Natural Language Processing (NLP). I define labor markets in a novel way by clustering occupations based on their task descriptions.
 
-At the core of many papers in labour economics is the definition of the labour market. For example, many papers implicitly define labor markets using industry standard industry classification, such as NAICS. However, it is possible that true labour market boundaries do not perfectly overlap with standard industry classification. This project suggests a different classification scheme to define labor markets, based on the similarity of different occupations.
-
 **Contents**
 
 ## Background information
@@ -37,4 +35,16 @@ on the definition of the labour market. For example, Autor et al. (2013) use var
 labor markets to study the effects of global trade shocks. Labour market definitions are also
 relevant for the study of a variety of policies, such as the effect of unemployment insurance on the
 non-eligible (Lalive et al., 2015).
+
+In this paper, I use machine learning methods to define labour markets. Specifically, I use stateof-
+the-art methods from Natural Language Processing (NLP) to cluster occupations based on their
+task descriptions. I plan to refine these results by incorporating education and skill requirements.
+Eventually, the results will be used to study labour market concentration, imperfect competition in
+labour markets, and immigration.
+
+My ultimate goal is to define a ``labor market”. Specifically in my context, a ``labor market” is a
+cluster of occupations for which (a) the tasks of all of the occupations are similar and (b) the
+workers of these occupations have similar abilities, education, and experience. This is useful for
+researchers with datasets that include occupation codes for workers. Two workers in the same ``labor market” should be very substitutable, even if they have different occupation codes in the
+data.
 
