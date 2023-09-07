@@ -2,10 +2,6 @@
 """
 Created on Thu Mar 25 21:19:37 2021
 
-To replicate my results:
-1. Change the working directory to "ECO 3400 Final Project - To hand in - Stephen Tino" in "stino_code.py" (Line 26)
-2. run "stino_code.py"
-
 @author: Stephen Tino
 """
 
