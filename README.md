@@ -10,6 +10,8 @@ The purpose of this project is to improve upon existing definitions of labor mar
 - [Background information](#Background-information)
 - [Data](#Data)
 - [Methodology](#Methodology)
+- [Overview of the code](#Code)
+- [Results](#Results)
 
 ## Background information
 
@@ -83,7 +85,16 @@ where $TF_{ik} = \frac{c_{ik}}{\sum_j c_{ij}},$ with $c_{ij}$ denotes the count 
 
 The above method produces a 300-dimensional real-valued vector for each occupation i in the O\*NET database.
 
-After applying the above procedure, I obtained a 300-dimensional vector representation for each
-occupation in my data. I then used AgglomerativeClustering from sklearn.cluster to cluster the
-occupations into 50 clusters. The number 50 is arbitrary here, but it seems to work well. I used
-cosine similarity2 as the affinity in AgglomerativeClustering.
+After applying the above procedure, I obtained a 300-dimensional vector representation for each occupation in my data. I then used AgglomerativeClustering from sklearn.cluster to cluster the occupations into 50 clusters. The number 50 is arbitrary here, but it seems to work well. I used cosine similarity2 as the affinity in AgglomerativeClustering.
+
+## Overview of the code
+
+There is one main python script "*code/main.py*". This script accomplishes the following:
+- preprocesses the task descriptions by removing stop words and punctuation
+- creates TF-IDF weights using *sklearn*
+- creates vector representations for each task description
+- clusters the occupations to define labor markets
+
+## Results
+
+The results are available in "*results/occupation_cluster_results_April11.csv*". The "cluster" variable in that csv file defines the labor market associated with each occupation. If you would like to use this classification scheme to define labor markets, please cite this github and shoot me an email :) 
