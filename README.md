@@ -9,6 +9,7 @@ The purpose of this project is to improve upon existing definitions of labor mar
 
 - [Background information](#Background-information)
 - [Data](#Data)
+- [Methodology](#Methodology)
 
 ## Background information
 
@@ -53,6 +54,7 @@ I also used stop words from the following sources (following Kogan et al. 2020):
 - http://www.text-analytics101.com/2014/10/all-about-stop-words-for-text-mining.
 - http://www.webconfs.com/stop-words.php
 - http://www.nltk.org/book/ch02.html
-- 
+
 The above sources produced 1,324 unique stop words.
 
+## Methodology
