@@ -15,8 +15,7 @@ appropriately defined as groups of workers with similar education and experience
 conclusions about the effects of immigration in that paper depend heavily on the labour market
 definition. Other studies in the immigration literature (e.g., Ottaviano et al., 2016) implicitly define
 labour markets at the industry-year level. However, it is possible that true labour market
-boundaries do not perfectly overlap with standard industry classification. It is possible that
-researchers arrive at different conclusions in their studies if they adopt different definitions of the
+boundaries do not perfectly overlap with standard industry classification, and that researchers would arrive at different conclusions in their studies if they adopt different definitions of the
 labour market in their analyses.
 
 In this project, I use methods from Natural Language Processing (NLP) to cluster occupations based on their
