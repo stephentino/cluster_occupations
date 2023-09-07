@@ -6,7 +6,9 @@
 The purpose of this project is to improve upon existing definitions of labor markets by using methods from Natural Language Processing (NLP). I define labor markets in a novel way by clustering occupations based on their task descriptions.
 
 **Contents**
-(Background information)[#Background-information]
+
+- [Background information](#Background-information)
+- [Data](#Data)
 
 ## Background information
 
@@ -22,4 +24,8 @@ labour market in their analyses.
 In this project, I use methods from Natural Language Processing (NLP) to cluster occupations based on their
 task descriptions. My ultimate goal is to define a ``labor market”. Specifically in my context, a ``labor market” is a
 cluster of occupations for which (a) the tasks of all of the occupations are similar and (b) the
-workers of these occupations have similar abilities, education, and experience. 
+workers of these occupations have similar abilities, education, and experience.
+
+## Data
+
+
