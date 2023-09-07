@@ -25,7 +25,7 @@ boundaries do not perfectly overlap with standard industry classification, and t
 labor market in their analyses.
 
 In this project, I use methods from Natural Language Processing (NLP) to cluster occupations based on their
-task descriptions. My ultimate goal is to define a ``labor market”. Specifically in my context, a ``labor market” is a
+task descriptions. My ultimate goal is to define a "labor market". Specifically in my context, a "labor market" is a
 cluster of occupations for which (a) the tasks of all of the occupations are similar and (b) the
 workers of these occupations have similar abilities, education, and experience.
 
