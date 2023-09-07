@@ -71,13 +71,13 @@ in the GloVe database using the procedure below.
 Denote by $A_i$ the set of ``word vectors” in the task description of occupation 𝑖, and denote by $X_i$ the
 weighted average of these:
 
-$ X_i = \sum_{x_k \in A_i} w_{ik} x_k, $
+$X_i = \sum_{x_k \in A_i} w_{ik} x_k,$
 
 where $x_k$ is a 300-by-1 dimensional vector representation of a word in the task description for
 occupation 𝑖 (the task descriptions are from O\*NET and the vector representations of words are obtained from the GloVe database), and $w_{ik}$ is a scalar. Here, $w_{ik}$ is the term-frequency-inversedocument-
 frequency (TFIDF) weight defined as
 
-$ w_{ik} = TF_{ik} \times IDF_k, $
+$w_{ik} = TF_{ik} \times IDF_k,$
 
 where $TF_{ik} = \frac{c_{ik}}{\sum_j c_{ij}},$ with $c_{ij}$ denotes the count of the $j$th word in the task description of $i$, and $IDF_k$ is the natural log of the ratio of the number of occupations in the sample to the number of occupations in the sample with a task description that includes term $k$.
 
