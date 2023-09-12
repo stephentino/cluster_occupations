@@ -19,7 +19,7 @@ At the core of many papers in labor economics is the definition of the labor mar
 in a seminal work on the effects of immigration, [Borjas (2003)](https://doi.org/10.1162/003355303322552810) argued that labor markets are
 appropriately defined as groups of workers with similar education and experience. Borjas’
 conclusions about the effects of immigration in that paper depend heavily on the labor market
-definition. Other studies in the immigration literature (e.g., Ottaviano et al., 2016) implicitly define
+definition. Other studies in the immigration literature (e.g., [Ottaviano et al., 2013](https://doi.org/10.1257/aer.103.5.1925) implicitly define
 labor markets at the industry-year level. However, it is possible that true labor market
 boundaries do not perfectly overlap with standard industry classification, and that researchers would arrive at different conclusions in their studies if they adopt different definitions of the
 labor market in their analyses.
