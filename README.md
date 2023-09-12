@@ -16,7 +16,7 @@ The purpose of this project is to improve upon existing definitions of labor mar
 ## Background information
 
 At the core of many papers in labor economics is the definition of the labor market. For example,
-in a seminal work on the effects of immigration, Borjas (2003) argued that labor markets are
+in a seminal work on the effects of immigration, [Borjas (2003)](https://doi.org/10.1162/003355303322552810) argued that labor markets are
 appropriately defined as groups of workers with similar education and experience. Borjas’
 conclusions about the effects of immigration in that paper depend heavily on the labor market
 definition. Other studies in the immigration literature (e.g., Ottaviano et al., 2016) implicitly define
@@ -98,7 +98,6 @@ There is one main python script "*code/main.py*". This script accomplishes the f
 ## Results
 
 The results are available in "*results/occupation_cluster_results_April11.csv*". The "cluster" variable in that csv file defines the labor market associated with each occupation. If you would like to use this classification scheme to define labor markets, please cite this github and shoot me an email :) 
-
 
 # Author
 Stephen Tino, PhD Candidate in Economics, University of Toronto, s.tino@mail.utoronto.ca
