@@ -19,7 +19,7 @@ At the core of many papers in labor economics is the definition of the labor mar
 in a seminal work on the effects of immigration, [Borjas (2003)](https://doi.org/10.1162/003355303322552810) argued that labor markets are
 appropriately defined as groups of workers with similar education and experience. Borjas’
 conclusions about the effects of immigration in that paper depend heavily on the labor market
-definition. Other studies in the immigration literature (e.g., [Ottaviano et al., 2013](https://doi.org/10.1257/aer.103.5.1925) implicitly define
+definition. Other studies in the immigration literature (e.g., [Ottaviano et al., 2013](https://doi.org/10.1257/aer.103.5.1925)) implicitly define
 labor markets at the industry-year level. However, it is possible that true labor market
 boundaries do not perfectly overlap with standard industry classification, and that researchers would arrive at different conclusions in their studies if they adopt different definitions of the
 labor market in their analyses.
@@ -33,13 +33,13 @@ workers of these occupations have similar abilities, education, and experience.
 
 This project uses data from the following two sources:
 
-1. O\*NET database (https://www.onetcenter.org/database.html) – The O\*NET database
+1. [O\*NET database](https://www.onetcenter.org/database.html) – The O\*NET database
 contains rich information on over 900 occupations. It includes information on the skills,
 abilities, and knowledge associated with each occupation, as well as each occupation’s
 typical activities and tasks. It also includes information on the day-to-day aspects of many
 jobs and the qualifications of the typical worker in each job.
 
-2. GloVe: Global Vectors for Word Representation (Pennington et al., 2014) – the GloVe
+2. GloVe: Global Vectors for Word Representation ([Pennington et al., 2014](https:/doi.org/10.3115/v1/D14-1162)) – the GloVe
 database contains 1.9 million 300-dimensional vector representations of word meanings.
 These can be used to map words to a vector space so that the similarity of two words can
 assessed. The advantage of the GloVe database is that it can be used to identify words that
