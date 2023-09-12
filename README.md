@@ -39,14 +39,14 @@ abilities, and knowledge associated with each occupation, as well as each occupa
 typical activities and tasks. It also includes information on the day-to-day aspects of many
 jobs and the qualifications of the typical worker in each job.
 
-2. [GloVe: Global Vectors for Word Representation (Pennington et al., 2014)](https://doi.org/10.3115/v1/D14-1162)) – the GloVe
+2. [GloVe: Global Vectors for Word Representation (Pennington et al., 2014)](https://doi.org/10.3115/v1/D14-1162) – the GloVe
 database contains 1.9 million 300-dimensional vector representations of word meanings.
 These can be used to map words to a vector space so that the similarity of two words can
 assessed. The advantage of the GloVe database is that it can be used to identify words that
 are similar even when they are not synonyms (e.g. “dog” and “puppy”). This database will
 allow me to assess the similarity of task descriptions across occupations.
 
-I also used stop words from the following sources (following Kogan et al. 2020):
+I also used stop words from the following sources (following [Kogan et al., 2020](https://doi.org/10.2139/ssrn.3585676)):
 - https://pypi.python.org/pypi/stop-words
 - https://dev.mysql.com/doc/refman/5.1/en/fulltext-stopwords.html
 - http://www.lextek.com/manuals/onix/stopwords1.html
@@ -61,14 +61,14 @@ The above sources produced 1,324 unique stop words.
 
 ## Methodology
 
-I follow Kogan et al. (2020) to calculate the similarity of occupations by measuring the similarity
-of their task descriptions. The O*NET database contains descriptions of the typical tasks of over
+I follow [Kogan et al. (2020)](https://doi.org/10.2139/ssrn.3585676) to calculate the similarity of occupations by measuring the similarity
+of their task descriptions. The O\*NET database contains descriptions of the typical tasks of over
 900 occupations. These descriptions are written in full English sentences. For example, there are
-28 task descriptions for “Registered Nurse”, such as “record patients' medical information and
-vital signs” and “monitor, record, and report symptoms or changes in patients' conditions”.
+28 task descriptions for "Registered Nurse", such as "record patients' medical information and
+vital signs" and "monitor, record, and report symptoms or changes in patients' conditions".
 The first thing I did was lemmatize and tokenize each occupation’s task description using the
 NLTK package in python. Then, I removed all stop words, where the list of stop words came from
-several sources (see section IV). Next, I mapped the task descriptions to 300 dimensional vectors
+several sources. Next, I mapped the task descriptions to 300 dimensional vectors
 in the GloVe database using the procedure below.
 Denote by $A_i$ the set of ``word vectors” in the task description of occupation 𝑖, and denote by $X_i$ the
 weighted average of these:
