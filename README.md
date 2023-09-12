@@ -39,7 +39,7 @@ abilities, and knowledge associated with each occupation, as well as each occupa
 typical activities and tasks. It also includes information on the day-to-day aspects of many
 jobs and the qualifications of the typical worker in each job.
 
-2. GloVe: Global Vectors for Word Representation ([Pennington et al., 2014](https:/doi.org/10.3115/v1/D14-1162)) – the GloVe
+2. [GloVe: Global Vectors for Word Representation (Pennington et al., 2014)](https://doi.org/10.3115/v1/D14-1162)) – the GloVe
 database contains 1.9 million 300-dimensional vector representations of word meanings.
 These can be used to map words to a vector space so that the similarity of two words can
 assessed. The advantage of the GloVe database is that it can be used to identify words that
