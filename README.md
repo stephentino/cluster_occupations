@@ -3,7 +3,7 @@
 
 ## About this repository
 
-The purpose of this project is to define endogenous labor markets using methods from Natural Language Processing (NLP). I define labor markets in a novel way by clustering occupations based on their task descriptions.
+The purpose of this project is to define labor markets using methods from Natural Language Processing (NLP). I define labor markets in a novel way by clustering occupations based on their task descriptions.
 
 **Contents**
 
