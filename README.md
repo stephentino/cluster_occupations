@@ -97,7 +97,7 @@ There is one main python script "*code/main.py*". This script accomplishes the f
 
 ## Results
 
-The results are available in "*results/occupation_cluster_results_April11.csv*". The "cluster" variable in that csv file defines the labor market associated with each occupation. If you would like to use this classification scheme to define labor markets, please cite this github and shoot me an email :) 
+The results are available in "*results/occupation_cluster_results_April11.csv*". The "cluster" variable in that csv file defines the labor market associated with each occupation. 
 
 # Author
 Stephen Tino, PhD Candidate in Economics, University of Toronto, s.tino@mail.utoronto.ca
