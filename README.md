@@ -89,7 +89,7 @@ After applying the above procedure, I obtained a 300-dimensional vector represen
 
 ## Overview of the code
 
-There is one main python script "*code/main.py*". This script accomplishes the following:
+There is one main python script "[code/main.py](https://github.com/stephentino/cluster_occupations/blob/main/code/main.py)". This script accomplishes the following:
 - preprocesses the task descriptions by removing stop words and punctuation
 - creates TF-IDF weights using *sklearn*
 - creates vector representations for each task description
