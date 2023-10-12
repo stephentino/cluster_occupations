@@ -97,7 +97,7 @@ There is one main python script "[code/main.py](https://github.com/stephentino/c
 
 ## Results
 
-The results are available in "*results/occupation_cluster_results_April11.csv*". The "cluster" variable in that csv file defines the labor market associated with each occupation. 
+The results are available in "[results/occupation_cluster_results_April11.csv](https://github.com/stephentino/cluster_occupations/blob/main/results/occupation_cluster_results_April11.csv)". The "cluster" variable in that csv file defines the labor market associated with each occupation. 
 
 ## Author
 Stephen Tino, PhD Candidate in Economics, University of Toronto, s.tino@mail.utoronto.ca
